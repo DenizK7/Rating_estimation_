@@ -13,7 +13,7 @@ This project provides a REST API for predicting review ratings based on review t
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/DenizK7/Rating_Estimation.git
-   cd <repository_directory>
+   cd galaksiya_task
 2. **Create and activate a virtual environment**:
     ```bash
     python3 -m venv ml_env
@@ -62,7 +62,8 @@ python -m unittest discover -s tests
 ```
 
 ## Docker Instructions
-   
+**Note**: The Docker image is large due to the inclusion of BERT models. This can significantly increase build and deployment times. It is recommended to use a smaller or more efficient model if the Docker image size is a concern.**Size is >5GB**
+
 **Build the Docker Image**
 ```
 docker build -t my-fastapi-app .
